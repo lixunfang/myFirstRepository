@@ -1,0 +1,20 @@
+/**
+ * 1 ---> 001
+ * @author ligai
+ */
+
+// first
+if(i < 10){
+    strCount = "00" + i;
+}else if(i < 100){
+    strCount = "0" + i;
+}else{
+    strCount += i;
+}
+
+// second
+int i = 0;
+String str = new DecimalFormat("0000").format(i);
+
+// third
+str = String.format("%03d", i);
