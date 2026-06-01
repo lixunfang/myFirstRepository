@@ -134,6 +134,7 @@ proxy-groups:
       - DIRECT
 
 rules:
+  - GEOIP,CN,DIRECT
   - MATCH,PROXY
 ```
 
@@ -159,7 +160,7 @@ proxies:
     # fast-open: true   # 可按需开启
 
 proxy-groups:
-  - name: 🚀 Proxy
+  - name: Proxy
     type: select
     proxies:
       - hy2-h2.example.com
@@ -167,6 +168,6 @@ proxy-groups:
 
 rules:
   - GEOIP,CN,DIRECT
-  - MATCH,🚀 Proxy
+  - MATCH,Proxy
 ```
 
